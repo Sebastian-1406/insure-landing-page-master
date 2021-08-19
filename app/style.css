@@ -206,7 +206,7 @@ body {
 .contenedor__footer-texto{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-top: 40px;
 }
 .footer__texto {
