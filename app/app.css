@@ -216,7 +216,16 @@ body {
         left: 0;
         width: 100%;
     }
-
+    .nav__imagen-close{
+        display: none;
+    }
+        
+    .nav__active .nav__imagen-close {
+        display: block;
+    }
+    .nav__active .nav__imagen-hamburger {
+        display: none;
+    }
     .nav__active {
         overflow: hidden;
     }
@@ -234,7 +243,7 @@ body {
         padding: 20px;
     }
 
-    .nav__imagen-icon{
+    .nav__imagen-hamburger{
         display: none;
     }
     
