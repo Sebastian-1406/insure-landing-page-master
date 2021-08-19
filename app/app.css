@@ -167,7 +167,33 @@ body {
     }
     .nav__enlaces {
         position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background: var(--Very-Dark-Violet);
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 30px;
+        background-image: url("../images/bg-pattern-mobile-nav.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
         display: none;
+    }
+    .nav__enlaces .link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: var(--font2);
+        font-size: 17px;
+        color: var(--Very-Light-Gray);
+    }
+    .nav__enlaces .link-blanco {
+        border: 2px solid var(--Very-Light-Gray);
+        padding: 15px;
     }
     .header__contenido {
         position: relative;
@@ -189,6 +215,13 @@ body {
         right: 0;
         left: 0;
         width: 100%;
+    }
+
+    .nav__active {
+        overflow: hidden;
+    }
+    .nav__active .nav__enlaces {
+        display: flex;
     }
 
     
