@@ -176,9 +176,6 @@ body {
         padding: 50px 20px;
         flex-direction: column;
         gap: 30px;
-        background-image: url("../images/bg-pattern-mobile-nav.svg");
-        background-repeat: no-repeat;
-        background-position: bottom;
         display: none;
     }
     .nav__enlaces .link {
@@ -231,6 +228,13 @@ body {
     }
     .nav__active .nav__enlaces {
         display: flex;
+    }
+    .nav__enlaces .bg-mobile{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
     }
 
     
