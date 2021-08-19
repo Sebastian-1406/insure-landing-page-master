@@ -14,11 +14,13 @@ body {
     font-size: var(--font2);
 }
 
-.header-ilustracion-img{
+.header-ilustracion-mobile{
     width: 100%;
     vertical-align: middle;
 }
-
+.header-ilustracion-desktop{
+    display: none;
+}
 
 .header-texto{
     background-color: var(--Dark-Violet);
@@ -234,21 +236,137 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        width: 100%;
+        width: 100% ;
     }
-
-    
+    .linea-blanco {
+        display: none;
+    }
 }
-@media screen and (min-width:500px){
+
+@media screen and (min-width:700px){
     
     .nav {
         display: flex;
         justify-content: space-between;
-        padding: 20px;
+        align-items: center;
+        padding: 20px 100px;
     }
-
+    .nav__enlaces {
+        display: inline-flex;
+        align-items: center;
+        gap: 35px;
+    }
+    .nav__enlaces .link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: var(--font2);
+        font-weight: 700;
+        color: var(--Dark-Grayish-Violet);
+    }
+    .nav__enlaces .link-negro {
+        color: var(--Very-Dark-Violet);
+        border: 2px solid currentColor;
+        padding: 10px 25px;
+    }
+    .bg-mobile{
+        display: none;
+    }
     .nav__imagen-hamburger{
         display: none;
     }
-    
+    .nav__imagen-close{
+        display: none;
+    }
+    .header-ilustracion-mobile {
+        display: none;
+    }
+    .header-ilustracion-desktop{
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 100px;
+    }   
+    .header__contenido {
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: row;
+        background: var(--Dark-Violet);
+        position: relative;
+    }
+    .header-texto {
+        width: 50%;
+        text-align: left;
+        background: none;
+    }
+    .header-texto .titulo{
+        width: 75%;
+        font-size: 3.5em;
+    }
+    .linea-blanco{
+        background: #fff;
+        margin: 0;
+        width: 150px;
+    }
+    .header-texto .parrafo{
+        width: 90%;
+    }
+
+    .main{
+        padding: 250px 100px;
+        padding-bottom: 150px;
+    }
+    .seccion__diferente .sub-titulo{
+        text-align: left;
+        font-size: 4em;
+        font-weight: 400;
+    }
+    .linea {
+        margin: 0;
+        width: 150px;
+    }
+    .contenedor__card {
+        flex-direction: row;
+        margin: 100px 0;
+    }
+    .contenedor__card .card {
+        text-align: left;
+    }
+    .card .parrafo {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .seccion__trabaja {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 90px;
+        background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    }
+    .seccion__trabaja .titulo {
+        width: 50%;
+        text-align: left;
+        font-size: 3.4em;
+        margin: 0;
+    }
+    .footer {
+        padding: 50px 100px;
+    }
+    .footer__imagen{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contenedor__footer-texto{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 200px;
+    }
+    .footer__texto {
+        text-align: left;
+    }
+
 }

@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Insure landing page</title>
     
   <link rel="stylesheet" href="./app/normalize.css">
-  <link rel="stylesheet" href="./app/app.css">
+  <link rel="stylesheet" href="./app/style.css">
   
 </head>
 <body>
@@ -19,24 +19,26 @@
     <nav class="nav">
       <div class="nav__imagen">
         <img src="./images/logo.svg" alt="insure/svg" class="nav__imagen-logo">
-        <img src="./images/icon-hamburger.svg" aria-hidden="true" class="nav__imagen-hamburger">
-        <img src="./images/icon-close.svg" aria-hidden="true" class="nav__imagen-close">
+        <img src="./images/icon-hamburger.svg" aria-hidden="true" class="nav__imagen-hamburger mobile">
+        <img src="./images/icon-close.svg" aria-hidden="true" class="nav__imagen-close mobile">
       </div>
       <div class="nav__enlaces">
         <a href="#" class="link">How we work</a>
         <a href="#" class="link">Blog</a>
         <a href="#" class="link">Account</a>
-        <a href="#" class="link link-blanco">View plans</a>
+        <a href="#" class="link link-blanco link-negro">View plans</a>
         <img src="./images/bg-pattern-mobile-nav.svg" aria-hidden="true" class="bg-mobile">
       </div>
     </nav>
     <div class="header__contenido">
       <div class="header-ilustracion">
-        <img src="./images/image-intro-mobile.jpg" aria-hidden="true" class="header-ilustracion-img">
+        <img src="./images/image-intro-mobile.jpg" aria-hidden="true" class="header-ilustracion-mobile mobile">
+        <img src="./images/image-intro-desktop.jpg" aria-hidden="true" class="header-ilustracion-desktop desktop">
       </div>
-      <img src="./images/bg-pattern-intro-left-mobile.svg" aria-hidden="true" class="bg-mobile bg-mobile-left">
-      <img src="./images/bg-pattern-intro-right-mobile.svg" aria-hidden="true" class="bg-mobile bg-mobile-right">
+      <img src="./images/bg-pattern-intro-left-mobile.svg" aria-hidden="true" class="bg-mobile bg-mobile-left mobile">
+      <img src="./images/bg-pattern-intro-right-mobile.svg" aria-hidden="true" class="bg-mobile bg-mobile-right mobile">
       <div class="header-texto">
+        <div class="linea linea-blanco"></div>
         <h1 class="titulo">Humanizing your insurance.</h1>
         <p class="parrafo">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
         <a href="#" role="button" class="btn">View plans</a>
@@ -78,7 +80,7 @@
   </main>
 
   <footer class="footer">
-    <img src="./images/bg-pattern-footer-mobile.svg" aria-hidden="true" class="bg-mobile">    
+    <img src="./images/bg-pattern-footer-mobile.svg" aria-hidden="true" class="bg-mobile mobile">    
     <div class="footer__imagen">
       <img src="./images/logo.svg" alt="insure/svg" class="footer__imagen-logo">
       <div class="redes">
@@ -88,6 +90,7 @@
         <img src="./images/icon-instagram.svg" aria-hidden="true">
       </div>
     </div>
+    <div class="contenedor__footer-texto">
     <div class="footer__texto">
       <p class="footer__texto-secciones gris">Our company</p>
       <p class="footer__texto-secciones">How we work</p>
@@ -114,6 +117,7 @@
       <p class="footer__texto-secciones">Press</p>
       <p class="footer__texto-secciones">Licenses</p>
     </div>
+  </div>
 
   </footer>
 
