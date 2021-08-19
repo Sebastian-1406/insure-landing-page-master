@@ -40,7 +40,13 @@ body {
     z-index: 90;
     padding: 50px 20px;
     display: none;
-    height: 100vh;
+}
+.nav__enlaces .bg-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 .nav__enlaces .link {
     display: block;
@@ -148,7 +154,7 @@ body {
     margin: 50px 0;
 }
 .seccion__trabaja .titulo {
-    font-size: 2.5em;
+    font-size: 2.7em;
     margin-top: 0;
     color: var(--Very-Light-Gray);
     font-weight: 400;
@@ -168,6 +174,53 @@ body {
 }
 .nav__active .nav__imagen-close {
     display: block;
+}
+
+.footer{
+    padding: 100px 20px;
+    background: var(--Very-Light-Gray);
+    position: relative;
+}
+
+.footer .bg-mobile  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer__imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--Dark-Grayish-Violet);
+    position: relative;
+    z-index: 10;
+}
+.footer__imagen .redes {
+    display: inline-flex;
+    gap: 20px;
+}
+.contenedor__footer-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.footer__texto {
+    font-family: var(--font2);
+    text-transform: uppercase;
+    text-align: center;
+}
+.footer__texto-secciones{
+    color: var(--Very-Dark-Violet);
+    font-weight: 700;
+}
+.footer__texto .gris {
+    color: var(--Dark-Grayish-Violet);
+    margin-bottom: 20px;
 }
 
 
